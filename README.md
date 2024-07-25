@@ -1,7 +1,7 @@
 <img src="Xinaf1re.png" alt="Logo" width="70" height="70">
 
 # Xinf1re
-Converts rootful jailbreak tweaks to rootless. There are also optional symlinks that you can install to increase tweak compatibility! 
+Converts rootful jailbreak tweaks to rootless and vice versa. There are also optional symlinks that you can install to increase tweak compatibility! 
 **This will not work with every tweak**
 
 # License

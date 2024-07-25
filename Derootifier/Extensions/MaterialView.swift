@@ -1,8 +1,8 @@
 //
 //  MaterialView.swift
-//  Derootifier
+//  Xinaf1re
 //
-//  Created by Анохин Юрий on 15.04.2023.
+//  Updated by Sudo on 6/13/2024
 //
 
 import SwiftUI

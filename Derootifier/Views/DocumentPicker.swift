@@ -1,8 +1,8 @@
 //
 //  DocumentPicker.swift
-//  Derootifier
+//  Xinaf1re
 //
-//  Created by Анохин Юрий on 15.04.2023.
+//  Updated by Sudo on 6/13/2024
 //
 
 import SwiftUI
@@ -37,7 +37,7 @@ struct DocumentPicker: UIViewControllerRepresentable {
             
             guard fileManager.fileExists(atPath: selectedFileURL.path) else { return }
             
-            let destFolderURL = URL(fileURLWithPath: "/var/mobile/.Derootifier")
+            let destFolderURL = URL(fileURLWithPath: "/var/mobile/Documents/.Xinaf1re")
             
             do {
                 try fileManager.createDirectory(at: destFolderURL, withIntermediateDirectories: true, attributes: nil)

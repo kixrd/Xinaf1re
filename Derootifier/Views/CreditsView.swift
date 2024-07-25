@@ -1,8 +1,8 @@
 //
 //  CreditsView.swift
-//  Derootifier
+//  Xinaf1re
 //
-//  Created by Анохин Юрий on 23.04.2023.
+//  Updated by Sudo on 6/13/2024
 //
 
 import SwiftUI
@@ -12,19 +12,19 @@ struct CreditsView: View {
     var body: some View {
         NavigationView {
             ZStack(alignment: .center) {
-                FluidGradient(blobs: [.green, .mint],
-                              highlights: [.green, .mint],
+                FluidGradient(blobs: [.orange, .black],
+                              highlights: [.orange, .black],
                               speed: 0.5,
                               blur: 0.80)
-                .background(.green)
+                .background(.orange)
                 .ignoresSafeArea()
                 
                 ScrollView {
                     VStack {
-                        creditView(imageURL: URL(string: "https://avatars.githubusercontent.com/u/85764897?v=4"), name: "haxi0", description: "Made the app")
-                        creditView(imageURL: URL(string: "https://avatars.githubusercontent.com/u/70823629?v=4"), name: "evelyneee", description: "Helped a lot, gave the idea to make this app")
-                        creditView(imageURL: URL(string: "https://avatars.githubusercontent.com/u/81449663?v=4"), name: "NightwindDev", description: "Tester, massive thanks")
-                        creditView(imageURL: URL(string: "https://avatars.githubusercontent.com/u/80824905?v=4"), name: "korboybeats", description: "Tester, massive thanks")
+                        creditView(imageURL: URL(string: "https://avatars.githubusercontent.com/u/91740362?v=4"), name: "sudo9000", description: "Developer, Original Xinam1ne dev. Updated app & UI")
+                        creditView(imageURL: URL(string: "https://avatars.githubusercontent.com/u/113779460?v=4"), name: "talhah58", description: "Developer, Updated Xinam1ne patcher for app use")
+                        creditView(imageURL: URL(string: "https://avatars.githubusercontent.com/u/81449663?v=4"), name: "NightwindDev", description: "Tester")
+                        creditView(imageURL: URL(string: "https://avatars.githubusercontent.com/u/80824905?v=4"), name: "korboybeats", description: "Tester")
                     }
                     .padding()
                 }

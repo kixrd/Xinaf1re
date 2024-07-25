@@ -1,15 +1,15 @@
 //
 //  ContentView.swift
-//  Derootifier
+//  Xinaf1re
 //
-//  Created by Анохин Юрий on 15.04.2023.
+//  Updated by Sudo on 6/13/2024
 //
 
 import SwiftUI
 import FluidGradient
 
 struct ContentView: View {
-    let scriptPath = Bundle.main.path(forResource: "repack-rootless", ofType: "sh")!
+    let scriptPath = Bundle.main.path(forResource: "Xinam1nePatcher", ofType: "sh")!
     @AppStorage("firstLaunch") private var firstLaunch = true
     @State private var showingSheet = false
     @State private var selectedFile: URL?
@@ -18,6 +18,10 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack(spacing: 10) {
+                Text("Xinaf1re")
+                    .font(.system(size: 40))
+                    .foregroundColor(.white)
+                    .padding(.bottom, 20)
                 Button("Select .deb file") {
                     showingSheet.toggle()
                 }
@@ -55,16 +59,16 @@ struct ContentView: View {
             .padding()
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background (
-                FluidGradient(blobs: [.green, .mint],
-                              highlights: [.green, .mint],
+                FluidGradient(blobs: [.orange, .black],
+                              highlights: [.orange, .black],
                               speed: 0.5,
                               blur: 0.80)
-                .background(.green)
+                .background(.orange)
             )
             .ignoresSafeArea()
             .onAppear {
                 if firstLaunch {
-                    UIApplication.shared.alert(title: "Warning", body: "Please make sure the following packages are installed: dpkg, file, fakeroot, odcctools, ldid (from Procursus).")
+                    UIApplication.shared.alert(title: "Warning", body: "Please make sure the following packages are installed: dpkg, gawk, file, plutil, odcctools, ldid (from Procursus).")
                     firstLaunch = false
                 }
 #if !targetEnvironment(simulator)
